@@ -1,4 +1,17 @@
 body {
     font-family: 'Roboto', sans-serif;
-    color:  #434455;
+    color:  white;
+}
+.logo-frst {
+    color: #4d5ae5;
+}
+.logo-scnd {
+    color: #2E2F42;
+}
+.site-nav .link {
+    color: #2E2F42;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: black;
 }
