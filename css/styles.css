@@ -17,19 +17,26 @@ body {
 .logo-frst:focus {
     text-decoration: underline;
 }
-.logo-scnd {
-    color: #2E2F42;
-}
+
 .logo-scnd:hover,
 .logo-scnd:focus {
     text-decoration: underline;
 }
-.site-nav .link {
-    color: #2E2F42;
+.site-nav {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
     text-decoration: underline;
+}
+.inf-nav .nav-link {
+    font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
 }
 .hero {
     background-color: #2E2F42;
@@ -47,17 +54,15 @@ color: #FFFFFF;
     background-color: #E5E5E5;
 }
 
-.features-list .title {
-    color: #2E2F42;
-font-style: normal;
+.features-list .title,
+ .services h3 {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 }
-.features-list .part {
-    font-style: normal;
-font-weight: 400;
+.features-list .part,
+.services p {
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -68,7 +73,6 @@ letter-spacing: 0.02em;
      background-color: #E5E5E5;
 }
 .functions-title {
-font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
@@ -79,16 +83,69 @@ text-transform: capitalize;
 .team {
     background-color: #F4F4FD;
 }
+.team-title {
+font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.team-name {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.02em;
+}
+.team-prof {
+    font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
 /*button*/
 .button {
     color:#FFFFFF;
     background-color: #4D5AE5;
-    font-family: 'Roboto';
-font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1,5;
 display: flex;
 align-items: center;
 letter-spacing: 0.04em;
+}
+.button-first {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        background: #404BBF;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            border-radius: 4px;
+}
+.button-main {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+       display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #4D5AE5;
+        background: #F4F4FD;
+}
+.last {
+    font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #E7E9FC;
+}
+.foot {
+    background: #2E2F42;
 }
