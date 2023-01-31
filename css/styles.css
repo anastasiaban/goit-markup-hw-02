@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color:  #2E2F42;
+    background-color: white;
 }
 /*Цвет основного теста #2E2F42*/
 /*Цвет вторичный теста #434455*/
@@ -10,14 +11,28 @@ body {
 .list {
     list-style: none;
 }
+a {
+text-decoration: none;
+}
 .logo-frst {
+    font-family: 'Raleway';
+    font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
     color: #4d5ae5;
+    letter-spacing: 0.03em;
 }
 .logo-frst:hover,
 .logo-frst:focus {
     text-decoration: underline;
 }
-
+.logo-scnd {
+font-family: 'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+letter-spacing: 0.03em;
+}
 .logo-scnd:hover,
 .logo-scnd:focus {
     text-decoration: underline;
@@ -38,6 +53,10 @@ body {
         letter-spacing: 0.02em;
         color: #434455;
 }
+.inf-nav .nav-link:hover,
+.inf-nav .nav-link:focus {
+    text-decoration: underline;
+}
 .hero {
     background-color: #2E2F42;
 }
@@ -49,9 +68,13 @@ text-align: center;
 letter-spacing: 0.02em;
 color: #FFFFFF;
 }
+.hero-title:hover,
+.hero-title:focus {
+      text-decoration: underline;
+}
 /*преимущества*/
 .features {
-    background-color: #E5E5E5;
+   
 }
 
 .features-list .title,
@@ -105,18 +128,26 @@ font-weight: 700;
         letter-spacing: 0.02em;
         color: #434455;
 }
+
 /*button*/
 .button {
+    font-family: 'Roboto', sans-serif;
     color:#FFFFFF;
     background-color: #4D5AE5;
 font-weight: 500;
 font-size: 16px;
-line-height: 1,5;
+line-height: 1.5;
 display: flex;
 align-items: center;
 letter-spacing: 0.04em;
+cursor: pointer
 }
-.button-first {
+.button:hover,
+.button:focus {
+      text-decoration: underline;
+}
+.button-active {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -128,17 +159,23 @@ letter-spacing: 0.04em;
         background: #404BBF;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
             border-radius: 4px;
+            cursor: pointer
 }
 .button-main {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-       display: flex;
         align-items: center;
         text-align: center;
         letter-spacing: 0.04em;
         color: #4D5AE5;
         background: #F4F4FD;
+        cursor: pointer
+}
+.button-main:hover,
+.button-main:focus {
+      text-decoration: underline;
 }
 .last {
     font-size: 16px;
