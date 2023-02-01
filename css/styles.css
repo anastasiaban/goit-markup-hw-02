@@ -73,9 +73,6 @@ color: #FFFFFF;
       text-decoration: underline;
 }
 /*преимущества*/
-.features {
-   
-}
 
 .features-list .title,
  .services h3 {
@@ -92,9 +89,6 @@ letter-spacing: 0.02em;
     color: #434455;
 }
 
-.functions {
-     background-color: #E5E5E5;
-}
 .functions-title {
 font-weight: 700;
 font-size: 36px;
@@ -103,9 +97,7 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 }
-.team {
-    background-color: #F4F4FD;
-}
+
 .team-title {
 font-weight: 700;
     font-size: 36px;
@@ -129,6 +121,10 @@ font-weight: 700;
         color: #434455;
 }
 
+.services-link:hover,
+.services-link:focus {
+    text-decoration: underline;
+}
 /*button*/
 .button {
     font-family: 'Roboto', sans-serif;
@@ -137,7 +133,6 @@ font-weight: 700;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-display: flex;
 align-items: center;
 letter-spacing: 0.04em;
 cursor: pointer
@@ -151,9 +146,6 @@ cursor: pointer
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        display: flex;
-        align-items: center;
-        text-align: center;
         letter-spacing: 0.04em;
         color: #FFFFFF;
         background: #404BBF;
