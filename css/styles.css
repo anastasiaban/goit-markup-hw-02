@@ -1,6 +1,16 @@
+:root {
+    --primary-text-color: #2E2F42; 
+    --title-text-color: #434455;
+    --aacent-color: #4D5AE5;
+    --logo-seclast-color: F4F4FD;
+    --footer-text-color: #E7E9FC;
+    --order-button-color: #FFFFFF;
+    --hover-focus-color: #404BBF; 
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    color:  #2E2F42;
+    color:  var(--primary-text-color);
     background-color: white;
 }
 /*Цвет основного теста #2E2F42*/
@@ -19,12 +29,12 @@ text-decoration: none;
     font-weight: 800;
 font-size: 18px;
 line-height: 1.33;
-    color: #4d5ae5;
+    color: var(--aacent-color);
     letter-spacing: 0.03em;
 }
 .logo-frst:hover,
 .logo-frst:focus {
-    text-decoration: underline;
+    color: var(--hover-focus-color);
 }
 .logo-scnd {
 font-family: 'Raleway';
@@ -35,7 +45,7 @@ letter-spacing: 0.03em;
 }
 .logo-scnd:hover,
 .logo-scnd:focus {
-    text-decoration: underline;
+    color: var(--hover-focus-color);
 }
 .site-nav {
     font-weight: 500;
@@ -45,33 +55,30 @@ letter-spacing: 0.03em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
+    color: var(--hover-focus-color);
     text-decoration: underline;
 }
 .inf-nav .nav-link {
     font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--title-text-color);
 }
 .inf-nav .nav-link:hover,
 .inf-nav .nav-link:focus {
-    text-decoration: underline;
+    color: var(--hover-focus-color);
 }
 .hero {
-    background-color: #2E2F42;
+    background-color: var(--primary-text-color);
 }
 .hero-title {
 font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
-text-align: center;
 letter-spacing: 0.02em;
-color: #FFFFFF;
+color: var(--order-button-color);
 }
-.hero-title:hover,
-.hero-title:focus {
-      text-decoration: underline;
-}
+
 /*преимущества*/
 
 .features-list .title,
@@ -86,14 +93,13 @@ letter-spacing: 0.02em;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--title-text-color);
 }
 
 .functions-title {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
-text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 }
@@ -102,7 +108,6 @@ text-transform: capitalize;
 font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
@@ -110,36 +115,30 @@ font-weight: 700;
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
-        text-align: center;
         letter-spacing: 0.02em;
 }
 .team-prof {
     font-size: 16px;
         line-height: 1.5;
-        text-align: center;
         letter-spacing: 0.02em;
         color: #434455;
 }
 
-.services-link:hover,
-.services-link:focus {
-    text-decoration: underline;
-}
+
 /*button*/
 .button {
     font-family: 'Roboto', sans-serif;
-    color:#FFFFFF;
-    background-color: #4D5AE5;
+    color: var(--order-button-color);
+    background-color: var(--aacent-color);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-align-items: center;
 letter-spacing: 0.04em;
 cursor: pointer
 }
 .button:hover,
 .button:focus {
-      text-decoration: underline;
+    background-color: var(--hover-focus-color);
 }
 .button-active {
     font-family: 'Roboto', sans-serif;
@@ -147,8 +146,8 @@ cursor: pointer
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
-        color: #FFFFFF;
-        background: #404BBF;
+        color: var(--order-button-color);
+        background: var(--aacent-color);
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
             border-radius: 4px;
             cursor: pointer
@@ -158,23 +157,24 @@ cursor: pointer
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        align-items: center;
-        text-align: center;
         letter-spacing: 0.04em;
-        color: #4D5AE5;
-        background: #F4F4FD;
+        color: var(--aacent-color);
+        background: var(--logo-seclast-color);
         cursor: pointer
 }
 .button-main:hover,
 .button-main:focus {
-      text-decoration: underline;
+    color: var(--hover-focus-color);
 }
 .last {
     font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #E7E9FC;
+        color: var(--footer-text-color);
 }
 .foot {
-    background: #2E2F42;
+    background: var(--primary-text-color);
+}
+.services-title, .features-title {
+    display: none;
 }
