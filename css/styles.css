@@ -2,7 +2,7 @@
     --primary-text-color: #2E2F42; 
     --title-text-color: #434455;
     --aacent-color: #4D5AE5;
-    --logo-seclast-color: F4F4FD;
+    --logo-seclast-color: #F4F4FD;
     --footer-text-color: #E7E9FC;
     --order-button-color: #FFFFFF;
     --hover-focus-color: #404BBF; 
@@ -21,37 +21,57 @@ body {
 .list {
     list-style: none;
 }
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 a {
 text-decoration: none;
 }
-.logo-frst {
-    font-family: 'Raleway';
-    font-weight: 800;
+/*------------logo----------*/
+.logo {
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
 font-size: 18px;
 line-height: 1.33;
-    color: var(--aacent-color);
-    letter-spacing: 0.03em;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--aacent-color);
+}
+.logo-frst {
+    color: var(--primary-text-color);
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--hover-focus-color);
 }
 .logo-frst:hover,
 .logo-frst:focus {
     color: var(--hover-focus-color);
 }
 .logo-scnd {
-font-family: 'Raleway';
-font-weight: 800;
-font-size: 18px;
-line-height: 1.33;
-letter-spacing: 0.03em;
+    color: var(--logo-seclast-color);
 }
 .logo-scnd:hover,
 .logo-scnd:focus {
     color: var(--hover-focus-color);
 }
-.site-nav {
+/*------------header--------------------*/
+.site-nav .link {
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        color: var(--primary-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -59,15 +79,17 @@ letter-spacing: 0.03em;
     text-decoration: underline;
 }
 .inf-nav .nav-link {
+    color: var(--primary-text-color);
+    font-style: normal;
     font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: var(--title-text-color);
 }
 .inf-nav .nav-link:hover,
 .inf-nav .nav-link:focus {
     color: var(--hover-focus-color);
 }
+/*------------studio-------------------*/
 .hero {
     background-color: var(--primary-text-color);
 }
@@ -83,6 +105,7 @@ color: var(--order-button-color);
 
 .features-list .title,
  .services h3 {
+    color: var(--primary-text-color);
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -102,6 +125,9 @@ font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+}
+.team {
+    background-color: var(--logo-seclast-color);
 }
 
 .team-title {
@@ -164,8 +190,10 @@ cursor: pointer
 }
 .button-main:hover,
 .button-main:focus {
-    color: var(--hover-focus-color);
+    color: var(--order-button-color);
+    background-color: var(--aacent-color);
 }
+/* ----------------footer---------------------------*/
 .last {
     font-size: 16px;
         line-height: 1.5;
@@ -175,6 +203,4 @@ cursor: pointer
 .foot {
     background: var(--primary-text-color);
 }
-.services-title, .features-title {
-    display: none;
-}
+
